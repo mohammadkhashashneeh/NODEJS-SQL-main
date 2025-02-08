@@ -1,0 +1,31 @@
+create database  library 
+
+use library
+
+
+create table books (
+id int not null PRIMARY KEY auto_increment,
+name varchar(255) not null,
+title varchar(255) not null
+)
+select * from books
+select * from bookshop
+
+desc books
+
+create table authors (
+id int auto_increment Primary key,
+name varchar(255) not null, 
+country varchar(255) not null
+
+)
+
+
+create table bookshop (
+shop_id int auto_increment Primary key,
+city varchar(255) not null, 
+name varchar(255) not null,
+contactNumber varchar(255),
+email varchar(255),
+Address varchar(255)
+)
